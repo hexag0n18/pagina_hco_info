@@ -1,0 +1,308 @@
+@color_1: #202C39;
+@color_2: #283845;
+@color_3: #B8B08D;
+@color_4: #F2D492;
+@color_5: #F29559;
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+/* --------------------------- SECTION MAIN --------------------------- */
+
+.main{
+    font-family: 'Kaushan Script', cursive;
+}
+.main .logo_main{
+    position: absolute;
+    width: 504px;
+    height: 144px;
+    left: 50px;
+    top: 35px;
+    background: rgba(40, 56, 69, 0.5);
+}
+
+.main .dots_slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 0px 0px 5px;
+
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    right: 130px;
+    top: 60px;
+}
+
+.main .dots_slider .dot{
+    position: static;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 0 5px;
+
+    background: #B8B08D;
+    transition: 0.5s linear;
+}
+
+.main .dots_slider .dot.active{
+    background: #283845;
+    transition: 0.5s linear;
+}
+
+.main .bg{
+position: relative;
+}
+
+.main .bg .slider{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.main .bg img{
+    width: 100%;
+    transition: 0.5s linear;
+}
+
+.main .bg .direction{
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.main .bg .direction div{
+    padding: 0 25px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: .3s linear;
+}
+
+.main .bg .direction div:hover{
+    background: #283845;
+    transition: .3s linear;
+}
+
+.main nav{
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+
+    background: rgba(40, 56, 69, 0.5);
+}
+
+.main nav .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+}
+
+.main nav .nav a{
+    display: inline-block;
+    padding: 0 25px;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F2D492;
+}
+
+/* --------------------------- SECTION DESTINATIONS --------------------------- */
+
+.nav_d{
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    background: #283845;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.nav_d .img{
+    position: absolute;
+    width: 210px;
+    height: 60px;
+    left: 100px;
+    top: 10px;
+}
+
+.nav_d .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 549px;
+    height: 80px;
+    bottom: 0;
+    right: 30px;
+}
+
+.nav_d .nav a{
+    display: inline-block;
+    padding: 0 25px;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F2D492;
+}
+
+.destinations{
+    position: relative;
+    top: 105px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.destinations .card{
+    width: 100%;
+    height: 400px;
+
+    background: #F29559;
+    border-radius: 20px;
+    margin: 25px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.destinations .card .img{
+    width: 40%;
+    height: 400px;
+
+    background: url("../img/img_bella.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destinations .card .info{
+    width: 56%;
+    height: 400px;
+    background: #F2D492;
+
+    position: relative;
+}
+
+.destinations .card .info h2{
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+
+.destinations .card .info p{
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    padding: 0 50px;
+}
+
+/* --------------------------- SECTION EVENTS --------------------------- */
+
+.events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    top: 105px;
+    padding: 0 50px;
+}
+
+.events .event{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 25px 0;
+}
+
+.events .event .part_1,
+.events .event .part_2{
+    width: 48%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.events .event .part_1 .img_ent,
+.events .event .part_1 .text,
+.events .event .part_2 .title,
+.events .event .part_2 .img_div{
+    width: 100%;
+    height: 48%;
+    overflow: hidden;
+    position: relative;
+}
+
+.events .event .part_2 .img_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.events .event .part_2 .img_div .img_1,
+.events .event .part_2 .img_div .img_2{
+    width: 48%;
+    height: 100%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.events .event img{
+    width: 100%;
+}
+
+.events .event .part_2 .img_div .img_1 img,
+.events .event .part_2 .img_div .img_2 img{
+    width: 200%;
+}
+
+.events .event .part_2 .img_div .img_2 img{
+    position: absolute;
+    right: 0;
+}
