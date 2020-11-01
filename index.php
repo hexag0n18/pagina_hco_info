@@ -1,18 +1,8 @@
 <?php
+$page = "Inicio";
 
-
+include_once 'resources/cabecera.php';
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style_main.css">
-
-    <title>Inicio</title>
-</head>
-<body>
     <section class="main">
         <div class="bg">
             <div class="slider">
@@ -35,14 +25,11 @@
         </div>
         <nav>
             <div class="nav">
-                <a href="#">Inicio</a>
-                <a href="destinos.html">Destinos</a>
-                <a href="eventos.html">Eventos</a>
-                <a href="contactos.html">Contactos</a>
+                <a href="destinos.php">Destinos</a>
+                <a href="eventos.php">Eventos</a>
+                <!-- <a href="contactos.php">Contactos</a> -->
             </div>
         </nav>
     </section>
 
-    <script src="js/js_main.js"></script>
-</body>
-</html>
+<?php include_once 'resources/footer.php';

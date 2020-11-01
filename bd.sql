@@ -18,7 +18,7 @@ CREATE TABLE `hco_eventos` (
     `id_hco_evento` INT NOT NULL AUTO_INCREMENT,
     `titulo_hco_evento` VARCHAR(150) NOT NULL,
     `desc_hco_evento` TEXT NOT NULL,
-    `ubi_hco_evento` VARCHAR(100) NOT NULL,
+    `fecha_hco_evento` VARCHAR(100) NOT NULL,
     `img1_hco_evento` VARCHAR(100) NOT NULL,
     `img2_hco_evento` VARCHAR(100) NOT NULL,
     PRIMARY KEY (`id_hco_evento`)

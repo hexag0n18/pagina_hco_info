@@ -14,3 +14,7 @@ function crearConexion(){
         echo "La conexión ha fallado: " . $error->getMessage();
     }
 }
+
+function cerrarConexion($conexion){
+    $conexion = null;
+}
