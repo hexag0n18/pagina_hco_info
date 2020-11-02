@@ -61,7 +61,7 @@ body{
 }
 
 .main .bg{
-position: relative;
+    position: relative;
 }
 
 .main .bg .slider{
@@ -73,12 +73,27 @@ position: relative;
     overflow: hidden;
 }
 
-.main .bg img{
+.main .bg .slider img{
+    position: absolute;
+    bottom: -15%;
     width: 100%;
-    transition: 0.5s linear;
 }
 
-.main .bg .direction{
+.main .bg .slider img{
+    display: none;
+    transition: 1s ease-in-out !important;
+}
+
+.main .bg .slider img.active{
+    display: inherit;
+    transition: 1s ease-in-out !important;
+}
+
+.main .bg img{
+    width: 100%;
+}
+
+/* .main .bg .direction{
     position: absolute;
     top: 50vh;
     width: 100%;
@@ -86,19 +101,19 @@ position: relative;
     flex-direction: row;
     justify-content: space-between;
     font-size: 2rem;
-}
+} */
 
-.main .bg .direction div{
+/* .main .bg .direction div{
     padding: 0 25px;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     transition: .3s linear;
-}
+} */
 
-.main .bg .direction div:hover{
+/* .main .bg .direction div:hover{
     background: #283845;
     transition: .3s linear;
-}
+} */
 
 .main nav{
     position: absolute;
@@ -107,7 +122,7 @@ position: relative;
     right: 0px;
     bottom: 0;
 
-    background: rgba(40, 56, 69, 0.5);
+    background: rgba(40, 56, 69, 0.8);
 }
 
 .main nav .nav{
@@ -170,19 +185,40 @@ position: relative;
 }
 
 .nav_d .nav a{
+    position: relative;
     display: inline-block;
+    height: 100%;
     padding: 0 25px;
 
     font-size: 1.5rem;
     text-decoration: none;
     color: #F2D492;
+    transition: .3s linear;
+}
+
+.nav_d .nav a p{
+    position: relative;
+    top: 40%;
+    transition: .3s linear;
+}
+
+.nav_d .nav a:hover{
+    background: #F2D492;
+    transition: .3s linear;
+}
+
+.nav_d .nav a:hover p{
+    position: relative;
+    top: 50%;
+    color: #283845;
+    transition: .3s linear;
 }
 
 .nav_d .nav .active{
     height: 100%;
     background: #F2D492;
 }
-.nav_d .nav .active a{
+.nav_d .nav .active p{
     position: relative;
     top: 50%;
     color: #283845;

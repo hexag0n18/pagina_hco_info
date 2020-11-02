@@ -5,8 +5,13 @@ include_once 'resources/cabecera.php';
 ?>
     <section class="main">
         <div class="bg">
-            <div class="slider">
-                <img id="slider">
+            <div id="slide" class="slider">
+                <!-- <img id="slider" > -->
+                <img src="img/slides/slide_1.jpg" alt="">
+                <img src="img/slides/slide_2.jpg" alt="">
+                <img src="img/slides/slide_3.jpg" alt="">
+                <img src="img/slides/slide_4.jpg" alt="">
+                <img src="img/slides/slide_5.png" alt="">
             </div>
             <!-- <div class="direction">
                 <div class="back" onclick="backSlide()">&#10094;</div>

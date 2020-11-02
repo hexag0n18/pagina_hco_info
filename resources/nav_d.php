@@ -1,9 +1,9 @@
     <nav class="nav_d">
         <div class="img"><img src="img/logo_nav_hco.svg" alt=""></div>
         <div class="nav">
-            <div <?php if ($page === "Inicio") echo 'class="active"'; ?>><a href="index.php">Inicio</a></div>
-            <div <?php if ($page === "Destinos") echo 'class="active"'; ?>><a href="destinos.php">Destinos</a></div>
-            <div <?php if ($page === "Eventos") echo 'class="active"'; ?>><a href="eventos.php">Eventos</a></div>
+            <a <?php if ($page === "Inicio") {echo 'class="active" '; echo 'href="#"';}else{?> href="index.php" <?php } ?>> <p>Inicio</p> </a>
+            <a <?php if ($page === "Destinos") {echo 'class="active" '; echo 'href="#"';}else{?> href="destinos.php" <?php } ?>> <p>Destinos</p> </a>
+            <a <?php if ($page === "Eventos") {echo 'class="active" '; echo 'href="#"';}else{?> href="eventos.php" <?php } ?>> <p>Eventos</p> </a>
             <!-- <div <?php if ($page === "Contactos") echo 'class="active"'; ?>><a href="contactos.html">Contactos</a></div> -->
         </div>
     </nav>
