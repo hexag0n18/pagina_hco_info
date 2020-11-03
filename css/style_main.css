@@ -252,10 +252,13 @@ body{
 .destinations .card .img{
     width: 40%;
     height: 400px;
+    overflow: hidden;
+}
 
-    background: url("../img/img_bella.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+.destinations .card .img img{
+    height: 100%;
+    position: relative;
+    left: -15%;
 }
 
 .destinations .card .info{

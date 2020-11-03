@@ -26,7 +26,7 @@ include_once 'resources/nav_d.php';
         <div class="event">
             <div class="part_1">
                 <div class="img_ent">
-                    <img src="img/img_bella.png" alt="">
+                    <img <?php echo 'src="img/bd/'.$result['img1_hco_evento'].'"'; ?> alt="">
                 </div>
                 <div class="text">
                     <p>
@@ -38,12 +38,12 @@ include_once 'resources/nav_d.php';
                 <div class="title">
                     <h2><?php echo $result['titulo_hco_evento']; ?></h2>
                     <div class="date">
-                        <h3><?php echo $result['ubi_hco_evento']; ?></h3>
+                        <h3><?php echo $result['fecha_hco_evento']; ?></h3>
                     </div>
                 </div>
                 <div class="img_div">
-                    <div class="img_1"><img src="img/img_bella.png" alt=""></div>
-                    <div class="img_2"><img src="img/img_bella.png" alt=""></div>
+                    <div class="img_1"><img <?php echo 'src="img/bd/'.$result['img2_hco_evento'].'"'; ?> alt=""></div>
+                    <div class="img_2"><img <?php echo 'src="img/bd/'.$result['img2_hco_evento'].'"'; ?> alt=""></div>
                 </div>
             </div>
         </div>

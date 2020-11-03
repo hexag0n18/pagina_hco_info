@@ -26,7 +26,7 @@ include_once 'resources/nav_d.php';
             if ($result['id_hco_destino']%2 == 1){
         ?>
             <div class="card">
-                <div class="img"></div>
+                <div class="img"><img <?php echo 'src="img/bd/'.$result['img_hco_destino'].'"'; ?> alt=""></div>
                 <div class="info">
                     <h2><?php echo $result['titulo_hco_destino']; ?></h2>
                     <p>
@@ -42,7 +42,7 @@ include_once 'resources/nav_d.php';
                         <?php echo $result['desc_hco_destino']; ?>
                     </p>
                 </div>
-                <div class="img"></div>
+                <div class="img"><img <?php echo 'src="img/bd/'.$result['img_hco_destino'].'"'; ?> alt=""></div>
             </div>
         <?php } } ?>
     </section>

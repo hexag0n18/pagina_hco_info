@@ -9,7 +9,7 @@ CREATE TABLE `hco_destinos` (
     `id_hco_destino` INT NOT NULL AUTO_INCREMENT,
     `titulo_hco_destino` VARCHAR(150) NOT NULL,
     `desc_hco_destino` TEXT NOT NULL,
-    `ubi_hco_destino` VARCHAR(100) NOT NULL,
+    -- `ubi_hco_destino` VARCHAR(100) NOT NULL,
     `img_hco_destino` VARCHAR(100) NOT NULL,
     PRIMARY KEY (`id_hco_destino`)
 ) ENGINE = InnoDB;
