@@ -2,7 +2,7 @@
 
 function crearConexion(){
     $servidor = "127.0.0.1";
-    $usuario = "root";
+    $usuario = "user";
     $password = "";
     $dbname = "hco_info";
     try {
